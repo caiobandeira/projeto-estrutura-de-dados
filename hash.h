@@ -25,8 +25,6 @@ int insereHash(Hash *h, const char *username, const char *senha);
 int removeHash(Hash *h, const char *username);
 void imprimeHash(Hash *h);
 void liberaHash(Hash *h);
-
-// Funções do Sistema de Login
 void cadastrarUsuario(Hash *h);
 void loginUsuario(Hash *h);
 void removerUsuario(Hash *h);
