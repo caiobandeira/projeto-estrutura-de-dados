@@ -15,12 +15,10 @@ typedef struct {
     Usuario **tabela;
 } Hash;
 
-// Funções Hash
 unsigned long valorString(const char *str);
 int chaveDivisao(unsigned long chave, int tamanho);
 unsigned long hashSenha(const char *senha);
 
-// Funções da Tabela
 Hash* criaHash(int tamanho);
 Usuario* buscaHash(Hash *h, const char *username);
 int insereHash(Hash *h, const char *username, const char *senha);
