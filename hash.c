@@ -61,7 +61,7 @@ int insereHash(Hash *h, const char *username, const char *senha) {
     if (!h) return 0;
 
     if (buscaHash(h, username) != NULL)
-        return 0; // já existe
+        return 0; 
 
     unsigned long chaveUser = valorString(username);
     int pos = chaveDivisao(chaveUser, h->tamanho);
